@@ -7,7 +7,7 @@ from utils import load_config
 
 
 class PointCloudPipeline:
-    """Same as VDB but jsut aggregate points."""
+    """Same as VDB but just aggregate points."""
 
     def __init__(self, dataset, config_file: str, map_name: str, jump: int = 0, n_scans: int = -1):
         self._dataset = dataset

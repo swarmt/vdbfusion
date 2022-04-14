@@ -35,7 +35,7 @@ def memoize(name=None, typed=False, expire=None, tag=None):
 
         def __cache_key__(*args, **kwargs):
             """Make key for cache given function arguments."""
-            return args_to_key(base, args, kwargs, typed)
+            return args_to_key(base, args, kwargs, typed, set())
 
         wrapper.__cache_key__ = __cache_key__
         return wrapper
